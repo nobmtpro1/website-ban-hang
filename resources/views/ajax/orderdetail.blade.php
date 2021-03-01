@@ -12,7 +12,7 @@
                                          ({{-$o->product->p_sale}}đ)
                                     @endif</td>
                                     <td>{{$o->qty}}</td>
-                                    <td>@if($o->product->p_sale_type =='%'){{number_format($o->product->p_price*$o->qty*(100-$o->product->p_sale)/100)}}đ@else {{number_format($o->product->p_price-$o->product->p_sale)*$o->qty}}đ@endif</td>
+                                    <td>@if($o->product->p_sale_type =='%'){{number_format($o->product->p_price*$o->qty*(100-$o->product->p_sale)/100)}}đ@else {{number_format(($o->product->p_price-$o->product->p_sale)*$o->qty)}}đ@endif</td>
 
                                   </tr>
            @endforeach
