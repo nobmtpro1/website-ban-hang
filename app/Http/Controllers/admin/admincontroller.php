@@ -7,5 +7,5 @@ use Illuminate\Http\Request;
 
 class admincontroller extends Controller
 {
-    //
+    //Nguyễn Bá Thái
 }
