@@ -27,4 +27,9 @@ class indexcontroller extends Controller
        $keyword = $request->keyword;
        return view('page.home.search',compact('result','keyword'));
    }
+
+   public function aaa()
+   {
+       return 'sssss';
+   }
 }
